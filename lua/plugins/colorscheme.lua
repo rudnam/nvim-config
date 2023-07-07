@@ -3,18 +3,9 @@ return {
   lazy = false,
   priority = 1000,
   config = function()
-    require("github-theme").setup({
-      options = {
-        transparent = true,
-      },
-    })
+    require("github-theme").setup({})
 
-    vim.cmd([[
-      augroup user_colors
-        autocmd!
-        autocmd Colorscheme * highlight Normal ctermbg=NONE guibg=NONE
-      augroup END
-    ]])
+    vim.cmd("autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE")
     vim.cmd("colorscheme github_dark_colorblind")
   end,
 }
