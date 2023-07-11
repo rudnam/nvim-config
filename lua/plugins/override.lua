@@ -58,4 +58,10 @@ return {
       })
     end,
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      autotag = { enable = true },
+    },
+  },
 }
