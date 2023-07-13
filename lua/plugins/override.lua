@@ -58,10 +58,24 @@ return {
       })
     end,
   },
+  -- Enable autotag (html, etc.)
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       autotag = { enable = true },
+    },
+  },
+  -- Show hidden files by default in Neotree
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false,
+          hide_gitignored = true,
+        },
+      },
     },
   },
 }
