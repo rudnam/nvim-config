@@ -14,3 +14,7 @@
 --   },
 --   cache_enabled = 0,
 -- }
+
+local opt = vim.opt
+
+opt.conceallevel = 0
